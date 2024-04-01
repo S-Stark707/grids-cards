@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hero "Image"</title>
+    <meta name="description" content="Webdesign for Design Mayors">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="icon" href="res/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" type="text/css" href="res/global.css" />
+
+
+    <style>
+
+div.hero{width:100%; height:100vh; display:grid}
+div.hero img{width: 100%; height: 100%; object-fit:cover; object-position:20% center; grid-column-start:1; grid-column-end:2; grid-row-start:1; grid-row-end:2}
+div.text{grid-column-start:1; grid-column-end:2; grid-row-start:1; grid-row-end:2;z-index:20; color:#ac76e3; font-size:3em; justify-self:center; align-self: center;}
+
+div.text-image{display: grid; grid-template-columns: 1fr 1fr; min-height: 100vh; grid-gap: 2vw; padding: 2vw}
+
+@media(orientation: portrait)
+{ div.text-image{grid-template-columns: 1fr}}
+
+div.text-image img {width: 100%; align-self: center;}
+div.text-image div{align-self: center;}
+
+div.rtf p{max-width: 60ch; line-height: 2em}
+div.rtf h2{font-size: 3em; line-height: 2em}
+
+div.cards{display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-gap: 5vw; padding:5vw}
+div.card{background-color: #fcc; aspect-ratio:1/1; border-radius: 50%; box-shadow: 0 0 20px rgba(0,0,0,0.5px);transition:all 0.5s}
+
+@media(max-width:1000px)
+{div.cards{grid-template-columns: 1fr 1fr 1fr}}
+@media(max-width:800px)
+{div.cards{grid-template-columns: 1fr 1fr}}
+@media(max-width:600px)
+{div.cards{grid-template-columns: 1fr}}
+
+div.cards2{display: grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); grid-gap: 5vw; padding:5vw}
+div.card{background-color: #ac76e3; aspect-ratio:1/1;box-shadow: 0 0 5px rgba(0,0,0,0.5)}
+div.card:hover{background-color: #cd7dff; border-radius: 0.5% 50% 50% 50%; transform:scale(1.1); box-shadow: 0px 10px 13px -7px #000000, 20px 24px 21px 18px rgba(0,0,0,0.29);}
+
+
+
+    </style>
+  </head>
+  <body>
+
+<div class="cards">
+ <div class="card">1</div>
+ <div class="card">2</div>
+ <div class="card">3</div>
+ <div class="card">4</div>
+ <div class="card">5</div>
+ <div class="card">6</div>
+ <div class="card">7</div>
+ <div class="card">8</div>
+</div>
+
+<div class="cards2">
+ <div class="card">1</div>
+ <div class="card">2</div>
+ <div class="card">3</div>
+ <div class="card">4</div>
+ <div class="card">5</div>
+ <div class="card">6</div>
+ <div class="card">7</div>
+ <div class="card">8</div>
+</div>
+
+
+    <div class="text-image">
+      <img src="res/hero.jpeg" alt="Hero is here">
+      <div class="rtf">
+        <h2> Call a hero, or Albert here, if trouble comes</h2>
+        <p>The currently accepted scientific name for Abert's squirrel is Sciurus aberti Woodhouse, 1853.[3] Woodhouse had initially described the species as Sciurus dorsalis in 1852, but this name turned out to be preoccupied by Sciurus dorsalis Gray, 1849 (now a subspecies of variegated squirrel S. variegatoides), and thus the present species was renamed.</p>
+        <p>Abert's squirrels are 46–58 cm long with a tail of 19–25 cm. They are easily recognized by their long ear tufts, which extend up from each ear 2–3 cm. This gives this species a striking similarity to the Eurasian red squirrel, aside from its differing dark coloration.
+        Abert's squirrels vary in color across their range. Most populations have a gray coat with a reddish stripe down the back, a dark stripe along the side, and a white underbelly. Some populations lack the reddish back stripe, instead having fully gray upperparts. A fully black color morph is present in the foothills of the Rocky Mountains in Colorado. Abert's squirrels on Arizona's Kaibab Plateau, commonly known as Kaibab squirrels, have black underparts and a striking white tail.</p>
+</div>
+</div>
+
+
+
+    <div class="hero">
+    <div class="rtf text">
+    <h1>This is a hero, Albert's Squirrel</h1>
+    <h2>Call a hero if trouble comes</h2>
+    </div>
+    <img src="res/hero.jpeg" alt="Hero is here">
+    </div>
+
+  </body>
+</html>
